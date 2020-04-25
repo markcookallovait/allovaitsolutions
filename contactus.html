@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us</title>
+</head>
+<br>
+
+<body>
+  <!--Contains a hyperlink references to my homepage-->
+  <a href="index.html">Home</a>
+  <br><br>
+  <!--Text decoration none means that the text will not be displayed as a hyperlink i.e. blue and underlined -->
+  <a style="text-decoration:none" href="http://www.brokenlinktoallovaitsolutions.co.uk">AllOvaIT Facebook</a>
+  <br><br>
+  <hr>
+  <!--this form creates a contact me form, by default the action is index.html which directs back to the homepage, we need to change this to mailto to email us -->
+  <!--The method attribute 'post' means to collect all the information in the form, action then sends the data where you direct it-->
+  <!--enctype means to choose the format of the text that is sent. If you dont add text/plain, the user sees garbled text with % signs -->
+  <form action="mailto:info@allovaitsolutions.co.uk" method="post" enctype="text/plain">
+    <!--This label requests the customers name. Note that when you add this you will have to tweak the code as autocompletes code is slightly wrong, copy below -->
+    <label>Your Name:</label>
+    <!--To store this information we require an input -->
+    <input type="text" name="Name" value=""><br>
+    <label>Your Email:</label>
+    <input type="email" name="email" value=""><br><br><br>
+    <label>Your Message:</label><br>
+    <!--This is a text area for the customer, we can ajust colums and rows -->
+    <textarea name="Message" id="" cols="10" rows="10" style="margin:0px;width: 160px; height: 91px;"></textarea><br>
+    <input type="submit" name="">
+  </form>
+
+</html>
