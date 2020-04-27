@@ -7,10 +7,27 @@
   <!--meta charset is the metadata which is rendered into utf/unicode. if this is wrong then you get garbled text) -->
   <meta charset="utf-8">
   <!--appears on the tab of a browser -->
+  <!-- adding a style to your <head> and choosing an attribute like H1 will affect all H1 headers on this page, as like paragraphs: p -->
+  <!--In the border style width we can choose a fixed amount of pixels. However, when the user is viewing in an iphone, it will look different to a pc. We need to use percentages in this case to render correctly -->
+  <!--PREVIOUS BACKGROUND body body {background-image: url('/../Images/techimage.jpg');} -->
+  <style>
+      h1 {color:#3f87a6;}
+      p {color:black;}
+      body  {background: conic-gradient(lightpink, white, #3f87a6)}
+      table {text-align:left}
+      hr {
+        background-color: white;
+        border-style: outset;
+        height: 2px;
+        width: 80%;
+
+      }
+  </style>
+
   <title>AllOvaIT</title>
 </head>
-
-<body>
+<!--We will start using CSS code below by adding style onto the body below -->
+<!--<body style="background: conic-gradient(lightpink, white, #3f87a6);"> -->
   <!--cell spacing adds space between our image below and the text underneath which will appear to the right of the table -->
   <table cellspacing="20">
     <tr>
@@ -20,7 +37,7 @@
       <td>
       -->
         <!--h1 is a header and is the largest of the headers, the smallest is h6 -->
-        <h1>AllOvaIT Solutions</h1>
+         <h1>AllOvaIT Solutions</h1>
         <!--the em tag creates italic, the strong tag bolds text.The p tag is paragraph for written text in the body -->
         <p><em>For all your <strong>Infrastructure </strong>and <strong>Web </strong>requirements.</em>
         <p>Qualified and with more than 10 years of proven experience. Our unrivalled experienced team can assist all growing small to medium sized businesses, no matter what your needs <br></p>
@@ -48,20 +65,25 @@
           <!--table header cell -->
           <th>Support</th>
           <th>Guidance</th>
-          <th>Management and more</th>
+          <th>Management</th>
         </tr>
         </thead>
         <!--table body -->
         <tr>
           <td>24x7 Remote support</td>
-          <td>24x7 Onsite Support</td>
-          <td>24x7 Proactive Monitoring and more</td>
+          <td>Security</td>
+          <td>On-Premise</td>
         </tr>
         <!--Then for the second row create the same as above again -->
         <tr>
-          <td>Security</td>
-          <td>Business Continuity</td>
-          <td>Cloud and more</td>
+          <td>24x7 Onsite Support</td>
+          <td>Disaster Recovery</td>
+          <td>Hybrid</td>
+        </tr>
+        <tr>
+          <td>24x7 Proactive Monitoring</td>
+          <td>Backup</td>
+          <td>Cloud</td>
         </tr>
       </tbody>
       <!--table foot. This is a header for the lower part of the table for calculation Totals etc. -->
